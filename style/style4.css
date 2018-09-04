@@ -1,0 +1,84 @@
+/*page one*/
+.ocean1{
+	position:absolute;
+	left:125px;
+}
+.shell{
+	position:relative;
+	top:470px;
+	left:300px;
+}
+.whale{
+	
+    
+}
+
+#whale{
+	position: relative;
+	top:200px;
+	left:420px;
+	-webkit-animation-duration: 1s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+
+}
+/*page two*/
+.sky{
+	position:absolute;
+	left:150px;
+	width: 1000%;
+}
+.bird{
+	position:relative;
+	top:300px;
+	left:370px;
+}
+.shellInSky{
+	position: relative;
+	top:100px;
+}
+.questionmark{
+	position: relative;
+	top:70px;
+	left:498px;
+}
+.arrow{
+	position: fixed;
+	top:710px;
+	left:550px;
+}
+.cloud{
+	position: absolute;
+	top:100px;
+	left:200px;
+}
+/*page three*/
+.cryingwhale{
+	position: relative;
+	top:200px;
+	left:420px;}
+/*page four*/
+.talk{
+	position: absolute;
+	top:20px;
+	left:500px;
+}
+.emptyshell{
+	position:relative;
+	top:470px;
+	left:300px;
+}
+
+#arrow {
+	position: relative;
+	height:5%;
+	width: 5%;
+	left:1290px;
+	top:-60px;
+	
+
+}
+#sky{
+	height: 500%;
+	width: 500%;
+}

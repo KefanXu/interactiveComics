@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="style/style45.css">
+<link rel="stylesheet" href="animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Da" rel="stylesheet">
+</head>
+<body>
+    <div class="sky">
+    	<img src="style/skysea.jpg" height="100%" width="100%"></img>
+
+	</div>
+	<div class="bird">
+		<img src="objects/bird4.png" height="200px" id="bird" class="animated wobble"></img>
+	</div>
+
+	<div class="shell">
+    	<img src="objects/brightshell.png" id="shell" width="100px">
+    </div>
+	<!-- <div class="talk">
+		<img src="objects/talk.png" height="400px"></img>
+	</div>-->
+
+	<div class="hellowhale">
+	<img src="objects/jumpingwhale.png" width="500px" id="whale"></img>
+	</div>
+	<a href="page5.html">
+		<img src="objects/arrow.png" id="arrow" width="280" class="animated tada">
+	</a>
+	<a href="page6.html">
+		<img src="objects/arrow2.png" id="arrow1" width="280" class="animated tada">
+	</a>
+	<div id="text1" class="animated bounceIn">
+	follow the bird    	
+	</div>
+	<div id="text2" class="animated bounceIn">
+	follow the whale    
+	</div>
+    <div id="text4" class="animated bounceIn">
+    click the bird to see what will happen
+    </div>
+  
+    <script src="jquery.js"></script>
+    <script type="text/javascript">
+    function choose(){
+    	var whaleButton = document.createElement("div");
+    	var birdButton = document.createElement("div");
+    	var whale = document.createTextNode("whale");
+    	var bird = document.createTextNode("bird");
+
+    }
+   $(function(){
+
+            $('.bird').click(function(){
+                $('#whale').addClass('animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated pulse');
+                    });
+                $('#shell').addClass('animated swing').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                  function(){
+                       $(this).removeClass('animated swing');
+                    });
+                 $('#text4').addClass('animated bounceOutDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated bounceIn');
+                    });
+            });
+
+        });
+
+    	
+
+    </script>
+
+</body>

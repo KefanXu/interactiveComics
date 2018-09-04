@@ -1,0 +1,14 @@
+.ocean1{
+	position:absolute;
+	left:125px;
+}
+.shell{
+	position:relative;
+	top:470px;
+	left:300px;
+}
+.whale{
+	position: relative;
+	top:200px;
+	left:420px;
+}

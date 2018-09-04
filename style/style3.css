@@ -1,0 +1,119 @@
+body{
+	background-image:url("pic01.jpg");
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}
+.ocean1{
+	position:absolute;
+	left:125px;
+}
+.shell{
+	position:relative;
+	top:470px;
+	left:300px;
+}
+.whale{
+	
+    
+}
+
+#whale{
+	position: relative;
+	top:200px;
+	left:420px;
+	-webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+
+}
+/*page two*/
+.sky{
+	position:absolute;
+	left:150px;
+}
+.bird{
+	position:relative;
+	top:300px;
+	left:370px;
+}
+.shellInSky{
+	position: relative;
+	top:100px;
+}
+.questionmark{
+	position: relative;
+	top:70px;
+	left:498px;
+}
+.arrow{
+	position: fixed;
+	top:710px;
+	left:550px;
+}
+.cloud{
+	position: absolute;
+	top:100px;
+	left:200px;
+}
+/*page three*/
+.cryingwhale{
+	position: relative;
+	top:200px;
+	left:420px;
+	-webkit-animation-duration: 6s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+}
+/*page four*/
+.talk{
+	position: absolute;
+	top:20px;
+	left:500px;
+}
+.emptyshell{
+	position:relative;
+	top:470px;
+	left:300px;
+}
+
+#arrow {
+	position: relative;
+	height:5%;
+	width: 5%;
+	left:1200px;
+	top:-60px;
+}
+#text3{
+	position: absolute;
+	font-family: 'Baloo Da', cursive;
+	font-size: x-large;
+	background-color: black;
+	border-radius: 25px;
+    border: 20px solid;
+    border-color: black;
+	color: white;
+	right:130px;
+	top:30px;
+	opacity: 0.8;
+	}
+	#text4{
+	position: absolute;
+	font-family: 'Baloo Da', cursive;
+	font-size: 14px;
+	background-color: white;
+	border-radius: 50px;
+    border: 10px solid;
+    border-color: white;
+	color: black;
+	right:900px;
+	top:600px;
+	opacity: 0.8;
+	}
+.talk3{
+	position: absolute;
+	left:280px;
+	top:210px;
+}

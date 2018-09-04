@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="style/style8.css">
+<link rel="stylesheet" href="animate.min.css">
+
+</head>
+
+<body>
+<!--<div class="finalsky">
+	<img src="sky/finalsky.jpg"></img>
+</div>-->
+<div class="bird0">
+	<img src="objects/bird6.png" width="200px" id="bird" class="animated tada"></img>
+</div>
+<div class="fallingshell">
+	<img src="objects/shell.png" width="100px" id="fallingshell" class="animated tada"></img>
+</div>
+<a href="page71.html">
+			<img src="objects/arrow.png" id="arrow" width="280" class="animated tada">
+		</a>
+
+ <script src="jquery.js"></script>
+    <script type="text/javascript">
+    $(function(){
+
+            $('.bird0').click(function(){
+                $("#fallingshell").addClass('animated bounceOutDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated tada');
+                    });
+            });
+
+        });
+        </script>
+
+
+</body>

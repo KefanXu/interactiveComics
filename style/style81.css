@@ -1,0 +1,174 @@
+body{
+	/*background-image:url("skysea.jpg");
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+	background-size: 50%;*/
+	background-color: black;
+	
+}
+#talk2{
+	position: absolute;
+	top:40px;
+	left:-250px;
+	display: none;
+		-webkit-animation-duration: 6s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+}
+.ocean1{
+	position:absolute;
+	left:125px;
+}
+.shell{
+	position:relative;
+	top:70px;
+	left:560px;
+}
+#shell{
+		-webkit-animation-duration: 5s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+}
+
+#bird{
+	-webkit-animation-duration: 5s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+}
+.whale{
+	position: relative;
+	top:200px;
+	left:420px;
+}
+#whale{
+	-webkit-animation-duration: 6s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+}
+/*page two*/
+.sky{
+	position:absolute;
+	left:150px;
+}
+.bird{
+	position:relative;
+	top:300px;
+	left:370px;
+}
+.shellInSky{
+	position: relative;
+	top:100px;
+}
+.questionmark{
+	position: relative;
+	top:70px;
+	left:498px;
+}
+
+.cloud{
+	position: absolute;
+	top:100px;
+	left:200px;
+}
+/*page three*/
+.cryingwhale{
+	position: relative;
+	top:200px;
+	left:420px;}
+/*page four*/
+.talk{
+	position: absolute;
+	top:20px;
+	left:500px;
+}
+.emptyshell{
+	position:relative;
+	top:470px;
+	left:300px;
+}
+
+#arrow1 {
+	position: absolute;
+	height:5%;
+	width: 5%;
+	left:800px;
+	top: 500px;
+
+}
+#text1{
+	position: absolute;
+	font-family: 'Baloo Da', cursive;
+	font-size: xx-large;
+	background-color: black;
+	border-radius: 25px;
+    border: 20px solid;
+    border-color: black;
+	color: white;
+	left:130px;
+	top:30px;
+	opacity: 0.8;
+	}
+.hellowhale{
+	position: absolute;
+	top:500px;
+	left:350px;
+}
+#arrow{
+	display: none;
+	position: relative;
+	left: 1000px;
+	top: 100px;
+}
+#firstarrow{
+	position: absolute;
+	display: block;
+	left: 1000px;
+	top: 300px;
+}
+#arrow1 {
+	position: relative;
+	height:6%;
+	width: 6%;
+	left:925px;
+	top: 250px;
+}
+
+}
+#text1{
+	position: absolute;
+	font-family: 'Baloo Da', cursive;
+	font-size: xx-large;
+	background-color: black;
+	border-radius: 25px;
+    border: 20px solid;
+    border-color: black;
+	color: white;
+	left:750px;
+	top:400px;
+	opacity: 0.8;
+	}
+#text2{
+	display: none;
+	position: absolute;
+	font-family: 'Baloo Da', cursive;
+	font-size: 14px;
+	background-color: white;
+	border-radius: 50px;
+    border: 10px solid;
+    border-color: white;
+	color: black;
+	left:150px;
+	top:700px;
+	opacity: 0.8;
+	}
+.talkp81{
+	position: absolute;
+	right:500px;
+	bottom:420px;
+}
+#talkp81{
+	display: block;
+}

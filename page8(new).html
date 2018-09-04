@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="style/style8.css">
+<link rel="stylesheet" href="animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Da" rel="stylesheet">
+
+</head>
+
+<body>
+<!--<div class="finalsky">
+	<img src="sky/finalsky.jpg"></img>
+</div>-->
+<div class="bird0">
+	<img src="objects/bird6.png" width="250px" id="bird" class="animated tada" onclick="disappear()"></img>
+</div>
+<div class="fallingshell">
+	<img src="objects/shell.png" width="100px" id="fallingshell" class="animated tada"></img>
+</div>
+<div class="animated pulse">
+    <img src="objects/p8talk1.png" width="300px" id="talk1" class="talk"> 
+    </div>
+    <div class="idea">
+    <img src="objects/idea.png" width="150px" id="idea">
+    </div>
+    <div class="arrow">
+    <img id = "arrow1" src="objects/arrow.png" class="animated tada" onclick="think()" width="50px">
+    </div>
+    <div class="talk2">
+    <img id="talk2" src="objects/p8talk2.png"  width="300px">
+    </div>
+    <div id="text4" class="animated bounceIn">
+    please click the arrow first
+    </div>
+<a href="page71.html">
+    <img src="objects/arrow.png" id="arrow" width="280" class="animated tada">
+</a>
+<div id="text" class="animated pulse">
+<p >Please click the bird</p>
+</div>
+ <script src="jquery.js"></script>
+    <script type="text/javascript">
+    $(function(){
+
+            $('.bird0').click(function(){
+                $("#fallingshell").addClass('animated bounceOutDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated tada');
+                    });
+                $('#talk2').addClass('animated bounceOutDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                       $(this).removeClass('animated pulse');
+                });
+            });
+             });
+
+
+            $(function(){
+
+            $('.arrow').click(function(){
+                $('#idea').addClass('animated tada').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated tada');
+                    });
+                $('#talk2').addClass('animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                       $(this).removeClass('animated pulse');
+                });
+                 $('#text4').addClass('animated bounceOutDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated bounceIn');
+                    });
+            });
+
+        });
+    function think(){
+        document.getElementById("idea").style.display="block";
+        document.getElementById("talk1").style.display="none";
+        document.getElementById("arrow1").style.display="none";
+        document.getElementById("text").style.display="block";       
+    }
+    function disappear(){
+        document.getElementById("text").style.display="none";
+        document.getElementById("arrow").style.display="block";
+        //document.getElementById("talk2").style.display="block";
+        document.getElementById("idea").style.display="none";
+    }
+ </script>
+
+</body>

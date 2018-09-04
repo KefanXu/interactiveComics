@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="style/style9.css">
+<link rel="stylesheet" href="animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Da" rel="stylesheet">
+
+</head>
+
+<body>
+<!--<div class="final">
+	<img src="sky/final.jpg"></img>-->
+</div>
+<div class="bird1">
+	<img src="objects/bird6.png" width="200px" id="bird" onclick="appear()"></img>
+</div>
+<div class="hellowhale">
+	<img src="objects/jumpingwhale.png" width="500px" id="whale" onclick="appear2()"></img>
+</div>
+<div class="shell">
+        <img src="objects/brightshell.png" id="shell" width="100px" onclick="appear3()">
+</div>
+
+<div id="end" class="animated bounceIn">
+END
+</div>
+<div id="text1" class="animated bounceIn">
+    <p>Through all these difficulities</p> 
+    <p>they finally meet with each other</p>
+</div>
+<div id="text3" class="animated bounceIn">
+    <p>at a place where there is no boundary between the sky and sea</p> 
+    
+</div>
+ <div id="text2" class="animated bounceIn">
+    click the bird to see what will happen   
+     </div> 
+ <div id="text4" class="animated bounceIn">
+    click the whale to see what will happen   
+</div> 
+<div id="text5" class="animated bounceIn">
+    <p>The bird finally handed the shell to the whale</p> 
+    
+</div>
+<div id="text6" class="animated bounceIn">
+    <p>click the shell to see what will happen</p> 
+    
+</div>
+<div id="text7" class="animated bounceIn">
+    <p>They smiled to each other like old friends for many years</p> 
+    
+</div>
+<div id="text8" class="animated bounceIn" onclick="change()">
+    <p>click me</p> 
+    
+</div>
+<a href="page0.html">
+<div id="re" class="animated bounceIn">
+RESTART
+</div>
+
+</a>
+
+    <script src="jquery.js"></script>
+    <script type="text/javascript">
+    function appear(){
+        document.getElementById("text3").style.display = "block";
+        document.getElementById("text4").style.display = "block";
+
+    }
+    function appear2(){
+        document.getElementById("text5").style.display = "block";
+        document.getElementById("text6").style.display = "block";
+    }
+    function appear3(){
+        //document.getElementById("text5").style.display = "block";
+        document.getElementById("text7").style.display = "block";
+        document.getElementById("text8").style.display = "block";
+    }
+    function change(){
+        document.getElementById("text7").style.display = "none";
+        document.getElementById("text8").style.display = "none";
+         document.getElementById("end").style.display = "block";
+        document.getElementById("re").style.display = "block";
+        document.getElementById("whale").style.display = "none";
+
+    }
+    $(function(){
+
+    		$('.bird1').click(function(){
+    			$("#whale").addClass('animated rotateIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated rotateIn');
+                    });
+                $('#text1').addClass('animated bounceOutUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated bounceIn');
+                    });
+                $('#text2').addClass('animated bounceOutDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated bounceIn');
+                    });
+    		});
+
+    	});
+    $(function(){
+
+            $('.hellowhale').click(function(){
+                $('#bird').addClass('animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated pulse');
+                    });
+                $('#text4').addClass('animated bounceOutDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated bounceIn');
+                    })
+                 $('#text3').addClass('animated bounceOutUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated bounceIn');
+                    })
+
+            });
+
+        });
+    $(function(){
+
+            $('.shell').click(function(){
+                $('#bird').addClass('animated bounceOutRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated pulse');
+                    });
+                $('#whale').addClass('animated bounceOutRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated rotateIn');
+                    })
+                 $('#text6').addClass('animated bounceOutDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated bounceIn');
+                    })
+                 $('#text5').addClass('animated bounceOutUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated bounceIn');
+                    })
+                 $('#shell').addClass('animated bounceOutRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated pulse');
+                    });
+
+            });
+
+        });
+   
+    	
+    </script>
+
+</body>

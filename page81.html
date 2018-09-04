@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="style/style81.css">
+<link rel="stylesheet" href="animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Da" rel="stylesheet">
+</head>
+<body>
+    <div class="sky">
+    	<img src="style/skysea.jpg" height="100%" width="100%"></img>
+    </div>
+	  <div class="bird">
+		  <img src="objects/bird4.png" height="200px" id="bird" class="animated wobble"></img>
+	  </div>
+
+	  <div class="shell">
+    	<img src="objects/brightshell.png" id="shell" width="100px" class="animated tada">
+    </div>
+	  <div class="talkp81" id="talkp81">
+		<img src="objects/p81talk1.png" height="250px" class="animated pulse"></img>
+	  </div>-->
+
+	  <div class="hellowhale" >
+	    <img src="objects/jumpingwhale.png" width="500px" id="whale" class="animated bounce" onclick="follow()"></img>
+	  </div>
+    <div class="talk">
+      <img id="talk2" src="objects/end.png"  width="300px">
+    </div>
+   <div id="text2" class="animated bounceIn">
+      click the whale to see what will happen   
+    </div>
+   
+    <a href="page9.html">
+      <img src="objects/arrow.png" id="arrow" width="60px" class="animated tada">
+    </a>
+    <img src="objects/arrow.png" id="firstarrow" width="60px" class="animated tada" onclick="change()">
+	
+  
+    <script src="jquery.js"></script>
+    <script type="text/javascript">
+    function change() {
+        document.getElementById("whale").src = "objects/whale2.png";
+        document.getElementById("bird").src = "objects/bird2.png";
+        document.getElementById("talk2").style.display = "block";
+        document.getElementById("talkp81").style.display="none";
+        document.getElementById("firstarrow").style.display="none";
+        document.getElementById("text2").style.display="block";
+
+        // body...
+    }
+    function follow(){
+      document.getElementById("arrow").style.display="block";
+
+    }
+   
+   $(function(){
+
+            $('.hellowhale').click(function(){
+                $('#whale').addClass('animated bounceOutRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated bounce');
+                    });
+                $('#bird').addClass('animated bounceOutRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                  function(){
+                       $(this).removeClass('animated wobble');
+                    });
+                $('#shell').addClass('animated bounceOutRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                  function(){
+                       $(this).removeClass('animated tada');
+                    });
+                 $('#talk2').addClass('animated bounceOutRight').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                  function(){
+                       $(this).removeClass('animated pulse');
+                    });
+                 $('#text2').addClass('animated bounceOutDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                  function(){
+                       $(this).removeClass('animated bounceIn');
+                    });
+            });
+
+        });
+
+   $(function(){
+
+            $('.bird').click(function(){
+                $('#whale').addClass('animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated pulse');
+                    });
+                $('#shell').addClass('animated swing').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                  function(){
+                       $(this).removeClass('animated swing');
+                    });
+                 
+            });
+
+        });
+
+    	
+
+    </script>
+
+</body>

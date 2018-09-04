@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="style/style2.css">
+<link rel="stylesheet" href="animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Da" rel="stylesheet">
+
+</head>
+
+<body>
+	<!--<div class="sky">
+		<img src="sky/sky1.jpg" height="800px"></img>
+	</div>-->
+	<div class="bird">
+		<img src="objects/bird1.png" height="250px" id="bird" class="animated swing"></img>
+	</div>
+	<div class="questionmark" id="questionmark">
+		<img src="objects/questionmark.png" height="50px"></img>
+	</div>
+	<div class="shellInSky" id="shell">
+		<img src="objects/shell.png" height="50px"></img>
+	</div>
+	<div class="cloud" id="cloud">
+		<img src="objects/cloud1.png" id= "cloudd1" height="80px" class="animated pulse"></img>
+	<div>
+	<div class="cloud1" id="cloud1">
+		<img src="objects/cloud1.png" id= "cloudd2" height="80px" class="animated pulse"></img>
+	<div>
+	<div class="cloud2" id="cloud2">
+		<img src="objects/cloud1.png" id= "cloudd3" height="80px" class="animated pulse"></img>
+	<div>
+	<div id="text2" class="animated bounceIn">
+		<p>One day, a bird in the sky sees a floating shell from the ocean</p>
+	</div>
+	<div id="text3" class="animated bounceIn">
+		<p>click the bird to see what will happen</p>
+	</div>
+	<div class="talk1" id="talk1">
+		<img src="objects/p2talk1.png" width="300px" class="animated bounceIn">
+	</div>
+	<img id = "arrow1" src="objects/arrow1.png" class="arrow"onclick="change()" width="50px">
+	
+	<a href="page3.html">
+		<img src="objects/arrow.png" id="arrow" width="280" class="animated tada">
+	</a>
+
+
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+		function change(){
+			document.getElementById("bird").src = "objects/bird5.png";
+			document.getElementById("text2").innerHTML="She surprisingly looks down"
+		    document.getElementById("arrow1").style.display="none";
+		    document.getElementById("arrow").style.display="block";
+		    document.getElementById("questionmark").style.display="block";
+		    document.getElementById("talk1").style.display="none";
+		}
+
+		var elem=document.getElementById("shell");
+		var pos=-1200;
+		var id = setInterval(frame, 10);
+		function frame() {
+		   if (pos == -650) {
+		      clearInterval(id);
+		      document.getElementById("talk1").style.display="block";
+		      document.getElementById("arrow1").style.display="block";
+		      document.getElementById("text2").innerHTML="click the black arrow";
+		      $(function(){
+		      	 $('.bird').addClass('animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated pulse');
+                    });
+            });
+		    } else {
+		      pos++;
+		      elem.style.right = pos + 'px';
+		    }
+		}
+
+		 //$(function(){
+
+//            $('.cloud').click(function(){
+  //              $("#cloudd").addClass('animated rotateIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+    //                function(){
+      //                  $(this).removeClass('animated rotateIn');
+        //            });
+          //  });
+
+     //   });
+
+		// $(function(){
+
+          //  $('.shellInSky').click(function(){
+            //    $('.bird').addClass('animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+              //      function(){
+                //        $(this).removeClass('animated pulse');
+                  //  });
+           // });
+
+        //});
+		 $(function(){
+
+            $('.bird').click(function(){
+                $('#shell').addClass('animated shake').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated shake');
+                    });
+                $('#text3').addClass('animated bounceOutDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated bounceIn');
+                    });
+            });
+                //$('.questionmark').addClass('animated bounceInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                  //  function(){
+                    //    $(this).removeClass('animated bounceInUp');
+                    //});
+            });
+
+        
+	</script>
+</body>

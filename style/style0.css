@@ -1,0 +1,60 @@
+body{
+	background-image:url("firstpage.jpg");
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;}
+#bird{
+	position: absolute;
+	top:50px;
+	left:200px;
+}
+
+#whale{
+	position: absolute;
+	bottom:70px;
+	right: 200px
+}
+.title{
+	position: absolute;
+	font-family:'Baloo Da', cursive;
+	font-size: xx-large;
+	color:white;
+	left:700px;
+	top:300px;
+}
+#arrow{
+	position: absolute;
+	right:30px;
+	top:340px;
+}
+#text1{
+	position: absolute;
+	font-family: 'Baloo Da', cursive;
+	font-size: xx-large;
+	background-color: black;
+	border-radius: 25px;
+    border: 20px solid;
+    border-color: black;
+	color: white;
+	left:500px;
+	top:330px;
+	filter:alpha(opacity=10);
+	}
+#text2{
+	display: none;
+	position: absolute;
+	left:516px;
+	/*right: -150px;*/
+	top:355px;
+	font-family: 'Baloo Da', cursive;
+	font-size: 14px;
+	background-color: white;
+	border-radius: 50px;
+    border: 10px solid;
+    border-color: white;
+	color: black;
+	opacity: 0.8;
+
+}

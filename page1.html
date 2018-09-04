@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<link rel="stylesheet" href="animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Da" rel="stylesheet">
+</head>
+
+<body>
+
+	<!--<div class="ocean1">
+		<img src="ocean/pic01.jpg" class= "animated bounceInDown"></img>
+	</div>-->
+    
+    <div class="shell">
+    	<img src="objects/brightshell.png" id="shell" width="100px" onmouseover="shiningShell()" onmouseout="dullShell()"></img>
+    </div>
+
+    <div class="whale">
+    	<img src="objects/whale.png" width="600px" class="animated bounce"></img>
+    </div>
+
+    <div id="text1" class="animated bounceIn">
+    In the ocean, there's a blithe whale living with his favorite shell 
+    </div>
+     <div id="text2" class="animated bounceIn">
+    click the whale and the shell to see what will happen   
+     </div>
+
+    <a href="page2.html">
+			<img src="objects/arrow.png" id="arrow" width="280" class="animated tada">
+		</a>
+
+    <!--<button type="button">Click me</button>-->
+
+    <script src="jquery.js"></script>
+    <script type="text/javascript">
+    	function shiningShell(){
+    	document.getElementById("shell").src ="objects/shell.png"
+    }
+    	function dullShell(){
+    	document.getElementById("shell").src ="objects/brightshell.png"
+    	}
+
+    	$(function(){
+
+    		$('.whale').click(function(){
+    			$("#shell").addClass('animated bounce').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated bounce');
+                    });
+                $('#text2').addClass('animated bounceOutDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated bounceIn');
+                    });
+            });
+    		});
+
+    	
+    $(function(){
+
+            $('.shell').click(function(){
+                $('.whale').addClass('animated pulse').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated pulse');
+                    });
+            });
+
+        });
+   
+    	
+    </script>
+
+
+
+</body>

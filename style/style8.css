@@ -1,0 +1,191 @@
+/*page one*/
+body{
+	background-image:url("finalsky.jpg");
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}
+.ocean1{
+	position:absolute;
+	left:125px;
+}
+.shell{
+	position:relative;
+	top:470px;
+	left:300px;
+}
+.whale{
+	position: relative;
+	top:200px;
+	left:420px;
+}
+/*page two*/
+.sky{
+	position:absolute;
+	left:150px;
+}
+.bird{
+	position:relative;
+	top:300px;
+	left:370px;
+	
+}
+
+#bird{
+	-webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+}
+.shellInSky{
+	position: relative;
+	top:100px;
+}
+.questionmark{
+	position: relative;
+	top:70px;
+	left:498px;
+}
+.arrow{
+	position: absolute;
+	top:500px;
+	right:20px;
+}
+.cloud{
+	position: absolute;
+	top:100px;
+	left:200px;
+}
+/*page three*/
+.cryingwhale{
+	position: relative;
+	top:200px;
+	left:420px;}
+/*page four*/
+.talk{
+	position: absolute;
+	top:20px;
+	left:500px;
+}
+.emptyshell{
+	position:relative;
+	top:470px;
+	left:300px;
+}
+/*page five*/
+/*
+#secondsky{
+	
+    
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 1s;}
+ */
+.secondbird{
+	position: fixed;
+	top:300px;
+	left:500px;
+} 
+
+.secondsky{
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+@-webkit-keyframes mymove {
+    0%   {left: 0px;}
+    100% {left: 2000px;}
+}
+/*page six*/
+.cryingocean{
+	position: absolute;
+}
+.cryingwhale{
+	position: absolute;
+	top:300px;
+}
+/*page seven*/
+.finalsky{
+	position: absolute;
+}
+.bird0{
+	position: absolute;
+	top:300px;
+	left:400px;
+}
+#fallingshell{
+		-webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+}
+.fallingshell{
+	position: absolute;
+	left:700px;
+	top:500px;
+
+}
+#arrow {
+	display: none;
+	position: relative;
+	height:5%;
+	width: 5%;
+	left:1290px;
+	top:350px;
+	
+}
+.talk{
+	position: absolute;
+	top:150px;
+	left:550px;
+	
+}
+#talk1{
+	display: block;
+}
+.idea{
+	position: absolute;
+	top:310px;
+	left:700px;
+}
+#idea{
+	display: none;
+}
+#arrow1{
+	display:block;
+}
+#text{
+	display: none;
+	position: absolute;
+	left:800px;
+	bottom:100px;
+	font-family: 'Baloo Da', cursive;
+	font-size: x-large;
+	background-color: white;
+	border-radius: 50px;
+    border: 0px solid;
+    border-color: white;
+	color: black;
+	opacity: 1;}
+#talk2{
+	display: none;
+}
+.talk2{
+	position: absolute;
+	right:600px;
+	top:150px;
+
+}
+#text4{
+	position: absolute;
+	font-family: 'Baloo Da', cursive;
+	font-size: 14px;
+	background-color: white;
+	border-radius: 50px;
+    border: 10px solid;
+    border-color: white;
+	color: black;
+	right:900px;
+	top:600px;
+	opacity: 0.8;
+	}

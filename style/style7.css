@@ -1,0 +1,140 @@
+body{
+	background-image:url("ocean03.jpg");
+	background-attachment:fixed;
+	background-repeat:no-repeat;*/
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;*/
+}
+.ocean1{
+	position:absolute;
+	left:125px;
+}
+.shell{
+	position:relative;
+	top:470px;
+	left:300px;
+}
+.whale{
+	position: relative;
+	top:200px;
+	left:420px;
+}
+/*page two*/
+.sky{
+	position:absolute;
+	left:150px;
+}
+.bird{
+	position:relative;
+	top:300px;
+	left:370px;
+}
+.shellInSky{
+	position: relative;
+	top:100px;
+}
+.questionmark{
+	position: relative;
+	top:70px;
+	left:498px;
+}
+.arrow{
+	position: fixed;
+	top:710px;
+	left:550px;
+}
+.cloud{
+	position: absolute;
+	top:100px;
+	left:200px;
+}
+/*page three*/
+.cryingwhale{
+	position: relative;
+	top:200px;
+	left:420px;}
+/*page four*/
+.talk{
+	position: absolute;
+	top:20px;
+	left:500px;
+}
+.emptyshell{
+	position:relative;
+	top:470px;
+	left:300px;
+}
+/*page five*/
+/*
+#secondsky{
+	
+    
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 1s;}
+ */
+.secondbird{
+	position: fixed;
+	top:300px;
+	left:500px;
+} 
+
+.secondsky{
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+@-webkit-keyframes mymove {
+    0%   {left: 0px;}
+    100% {left: 2000px;}
+}
+/*page six*/
+.cryingocean{
+	position: absolute;
+}
+.cryingwhale{
+	position: absolute;
+	top:300px;
+	
+}
+
+#cryingwhale{
+	-webkit-animation-duration: 2.5s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+}
+/*page seven*/
+.finalsky{
+	position: absolute;
+}
+.bird0{
+	position: absolute;
+	top:300px;
+	left:400px;
+}
+.fallingshell{
+	position: absolute;
+	left:700px;
+	top:450px;
+}
+#arrow {
+	position: relative;
+	height:5%;
+	width: 5%;
+	left:1200px;
+	top:350px;
+	
+}
+.talk7{
+	position: absolute;
+	top:150px;
+	left:300px;
+}
+.text7{
+	position: absolute;
+	top:230px;
+	right:950px;
+	left:310px;
+}
+

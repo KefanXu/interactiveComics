@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<head>
+<link rel="stylesheet" type="text/css" href="style/style3.css">
+<link rel="stylesheet" href="animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Da" rel="stylesheet">
+
+</head>
+
+<body>
+	<!--<div class="ocean1">
+		<img src="ocean/pic01.jpg"></img>
+	</div>-->
+    
+    <div class="emptyshell" >
+    	<img src="objects/emptyshell2.png" width="100px" id="emptyshell" ></img>
+    </div>
+
+    <div id="whale" class="animated bounce">
+    	<img src="objects/cryingwhale.png" width="650px" ></img>
+    </div>
+    <div id="text3" class="animated bounceIn">
+        The whale is crying for the loss of his favorate shell
+    </div>
+    <div id="text4" class="animated bounceIn">
+click the whale to see what will happen
+    </div>
+    <div id="talk3" class="talk3">
+        <img src="objects/p3talk1.png" width="350px" class="animated bounceIn"></img>
+    </div>
+
+    <a href="page43.html">
+		<img src="objects/arrow.png" id="arrow" width="280" class="animated tada">
+	</a>
+
+    <script src="jquery.js"></script>
+    <script type="text/javascript">
+    $(function(){
+
+            $('#whale').click(function(){
+                $("#emptyshell").addClass('animated tada').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated tada');
+                    });
+                $('#text4').addClass('animated bounceOutDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function(){
+                        $(this).removeClass('animated bounceIn');
+                    });
+            });
+            });
+
+
+        
+        </script>
+
+</body>

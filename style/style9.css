@@ -1,0 +1,294 @@
+body{
+	background-image:url("final.jpg");
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}
+.ocean1{
+	position:absolute;
+	left:125px;
+}
+.shell{
+	position:absolute;
+	top:260px;
+	left:630px;
+}
+.whale{
+	position: relative;
+	top:200px;
+	left:420px;
+}
+/*page two*/
+.sky{
+	position:absolute;
+	left:150px;
+}
+.bird{
+	position:relative;
+	top:300px;
+	left:370px;
+}
+.shellInSky{
+	position: relative;
+	top:100px;
+}
+.questionmark{
+	position: relative;
+	top:70px;
+	left:498px;
+}
+.arrow{
+	position: fixed;
+	top:710px;
+	left:550px;
+}
+.cloud{
+	position: absolute;
+	top:100px;
+	left:200px;
+}
+/*page three*/
+.cryingwhale{
+	position: relative;
+	top:200px;
+	left:420px;}
+/*page four*/
+.talk{
+	position: absolute;
+	top:20px;
+	left:500px;
+}
+.emptyshell{
+	position:relative;
+	top:470px;
+	left:300px;
+}
+/*page five*/
+/*
+#secondsky{
+	
+    
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-delay: 1s;}
+ */
+.secondbird{
+	position: fixed;
+	top:300px;
+	left:500px;
+} 
+
+.secondsky{
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+@-webkit-keyframes mymove {
+    0%   {left: 0px;}
+    100% {left: 2000px;}
+}
+/*page six*/
+.cryingocean{
+	position: absolute;
+}
+.cryingwhale{
+	position: absolute;
+	top:300px;
+}
+/*page seven*/
+.finalsky{
+	position: absolute;
+}
+.bird0{
+	position: absolute;
+	top:300px;
+	left:400px;
+}
+.fallingshell{
+	position: absolute;
+	left:700px;
+	top:450px;
+}
+/*page8*/
+.jumpingwhale{
+	position: absolute;
+	top:300px;
+	left: 400px
+}
+.shell01{
+	position: absolute;
+	top:280px;
+	left:630px;
+}
+/*page9*/
+.final{
+	position: absolute;
+}
+.bird1{
+	position: absolute;
+	top:40px;
+	left:500px;
+}
+.hellowhale{
+	position: absolute;
+	top:340px;
+	left:350px;
+}
+
+#bird{
+	-webkit-animation-duration: 5s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+}
+#whale{
+	-webkit-animation-duration: 6s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+}
+#shell{
+	-webkit-animation-duration: 4s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+}
+#end{
+	display: none;
+	position: absolute;
+	font-family: 'Baloo Da', cursive;
+	font-size: 60px;
+	background-color: black;
+	border-radius: 10px;
+    border: 20px solid;
+    border-color: black;
+	color: white;
+	left:620px;
+	bottom:500px;
+	opacity: 0.8;
+
+}
+#re{
+	display: none;
+	position: absolute;
+	font-family: 'Baloo Da', cursive;
+	font-size: 25px;
+	background-color: white;
+	border-radius: 10px;
+    border: 10px solid;
+    border-color: white;
+	color: black;
+	left:635px;
+	bottom:400px;
+	opacity: 0.8;
+
+}
+#text1{
+	position: absolute;
+	font-family: 'Baloo Da', cursive;
+	font-size: 16px;
+	background-color: black;
+	border-radius: 25px;
+    border: 0px solid;
+    border-color: black;
+	color: white;
+	left:130px;
+	top:30px;
+	opacity: 0.8;
+	}
+ #text2{
+	position: absolute;
+	font-family: 'Baloo Da', cursive;
+	font-size: 14px;
+	background-color: white;
+	border-radius: 50px;
+    border: 10px solid;
+    border-color: white;
+	color: black;
+	left:830px;
+	top:100px;
+	opacity: 0.8;
+	}
+	#text3{
+	display: none;
+	position: absolute;
+	font-family: 'Baloo Da', cursive;
+	font-size: 16px;
+	background-color: black;
+	border-radius: 25px;
+    border: 0px solid;
+    border-color: black;
+	color: white;
+	left:130px;
+	top:140px;
+	opacity: 0.8;
+	}
+	#text4{
+	display: none;
+	position: absolute;
+	font-family: 'Baloo Da', cursive;
+	font-size: 14px;
+	background-color: white;
+	border-radius: 50px;
+    border: 10px solid;
+    border-color: white;
+	color: black;
+	left:830px;
+	top:150px;
+	opacity: 0.8;
+	}
+	#text5{
+	display: none;
+	position: absolute;
+	font-family: 'Baloo Da', cursive;
+	font-size: 16px;
+	background-color: black;
+	border-radius: 25px;
+    border: 0px solid;
+    border-color: black;
+	color: white;
+	left:130px;
+	top:200px;
+	opacity: 0.8;
+	}
+	#text6{
+	display: none;
+	position: absolute;
+	font-family: 'Baloo Da', cursive;
+	font-size: 14px;
+	background-color: white;
+	border-radius: 50px;
+    border: 0px solid;
+    border-color: white;
+	color: black;
+	left:830px;
+	top:200px;
+	opacity: 0.8;
+	}
+#text7{
+	display: none;
+	position: absolute;
+	font-family: 'Baloo Da', cursive;
+	font-size: 16px;
+	background-color: black;
+	border-radius: 25px;
+    border: 0px solid;
+    border-color: black;
+	color: white;
+	left:130px;
+	top:250px;
+	opacity: 0.8;
+	}
+#text8{
+	display: none;
+	position: absolute;
+	font-family: 'Baloo Da', cursive;
+	font-size: 14px;
+	background-color: white;
+	border-radius: 50px;
+    border: 10px solid;
+    border-color: white;
+	color: black;
+	left:550px;
+	top:243px;
+	opacity: 0.8;
+	}
